@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/index.css">
+    <title>Attendance</title>
+</head>
+<body>
+    <div class="sidebar">
+        <span class="fs-4">ATTENDANCE</span>
+        <hr>
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="home.html">
+                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="addstudent.php">
+                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                    Add Student
+                </a>
+            </li>
+            <li>
+                <a href="addteacher.php">
+                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+                    Add Teacher
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.php">Sign out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="tiles">
+            <article class="tile student">
+                <div class="tile-header">
+                    <i class="ph-lightning-light"></i>
+                        <span><h1>Student Data</h1></span>
+                </div>
+                <a href="studentdata.php" class="tile-link">
+                    <button type="button" class="btn btn-success btn-lg">View Data</button>
+                    <i class="icon-button ph-arrow-right"></i>
+                </a>
+            </article>
+
+            <article class="tile teacher">
+                <div class="tile-header">
+                    <i class="ph-lightning-light"></i>
+                        <span><h1>Teacher Data</h1></span>
+                </div>
+                <a href="teacherdata.php" class="tile-link">
+                    <button type="button" class="btn btn-success btn-lg">View Data</button>
+                    <i class="icon-button ph-arrow-right"></i>
+                </a>
+            </article>
+        </div>
+    </div>
+</body>
+</html>
